@@ -6,26 +6,46 @@ import data.StudyGroup;
 import managers.CollectionManager;
 import managers.InputManager;
 
+/**
+ * Команда обновления элемента коллекции по идентификатору.
+ */
 public class UpdateIdCommand implements Command {
 
     private final CollectionManager collectionManager;
     private final InputManager inputManager;
 
+    /**
+     * Создает команду update.
+     *
+     * @param collectionManager менеджер коллекции
+     * @param inputManager менеджер ввода
+     */
     public UpdateIdCommand(CollectionManager collectionManager, InputManager inputManager) {
         this.collectionManager = collectionManager;
         this.inputManager = inputManager;
     }
 
+    /**
+     * @return имя команды
+     */
     @Override
     public String getName() {
         return "update id";
     }
 
+    /**
+     * @return описание команды
+     */
     @Override
     public String getDescription() {
         return "Обновить элемент по id";
     }
 
+    /**
+     * Обновляет элемент по id на значения, считанные из консоли.
+     *
+     * @param args аргументы команды, где первый элемент - id
+     */
     @Override
     public void execute(String[] args) {
         if (args == null || args.length == 0 || args[0].isBlank()) {

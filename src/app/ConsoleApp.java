@@ -1,4 +1,6 @@
-// класс для запуска приложения и обработки пользовательского ввода в консоли
+/**
+ * Класс для запуска приложения и обработки пользовательского ввода в консоли.
+ */
 
 package app;
 
@@ -8,16 +10,40 @@ import java.util.Scanner;
 
 public class ConsoleApp {
 
+    /**
+     * Менеджер команд для выполнения пользовательских команд.
+     */
+
     private final CommandsManager commandsManager;
+
+    /**
+     * Менеджер ввода для обработки пользовательского ввода.
+     */
+
     private final InputManager inputManager;
+
+    /**
+     * Сканер для чтения пользовательского ввода из консоли.
+     */
+
     private final Scanner scanner = new Scanner(System.in);
+
+    /**
+     * Конструктор класса ConsoleApp.
+     *
+     * @param commandsManager Менеджер команд.
+     * @param inputManager Менеджер ввода.
+     */
 
     public ConsoleApp(CommandsManager commandsManager, InputManager inputManager) {
         this.commandsManager = commandsManager;
         this.inputManager = inputManager;
     }
 
-    // основной цикл run() для обработки пользовательского ввода и выполнения команд
+    /**
+     * Основной цикл приложения для обработки пользовательского ввода и выполнения команд.
+     */
+
     public void run(){
         System.out.println("Приложение запущенно. Введите help для получения списка доступнхы команд");
         while(true){
@@ -38,13 +64,13 @@ public class ConsoleApp {
 
             Command command = commandsManager.getCommandByName(commandName);
             if (command == null){
-                System.out.println("Команда" + commandName + " не найдена. Введите help для получения списка доступных команд.");
+                System.err.println("Команда " + commandName + " не найдена. Введите help для получения списка доступных команд.");
                 continue; // если команда не найдена, выводим сообщение и продолжаем цикл
             }
             try {
                 command.execute(args);
             } catch (Exception e) {
-                System.out.println("Произошла ошибка при выполнении команды: " + e.getMessage()); // обработка исключений, которые могут возникнуть при выполнении команды
+                System.err.println("Произошла ошибка при выполнении команды: " + e.getMessage()); // обработка исключений, которые могут возникнуть при выполнении команды
             }
         }
     }

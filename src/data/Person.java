@@ -1,5 +1,8 @@
 package data;
 
+/**
+ * Класс, описывающий администратора учебной группы.
+ */
 public class Person {
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Long weight; //Поле не может быть null, Значение поля должно быть больше 0
@@ -7,13 +10,16 @@ public class Person {
     private Color eyeColor; //Поле не может быть null
     private Color hairColor; //Поле может быть null
 
-    public Person(
-            String name,
-            Long weight,
-            String passportID,
-            Color eyeColor,
-            Color hairColor
-    ) {
+    /**
+     * Создает объект администратора группы.
+     *
+     * @param name имя
+     * @param weight вес
+     * @param passportID номер паспорта
+     * @param eyeColor цвет глаз
+     * @param hairColor цвет волос
+     */
+    public Person(String name, Long weight, String passportID, Color eyeColor, Color hairColor) {
         // Валидация входных данных
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("name must not be empty");
@@ -36,27 +42,46 @@ public class Person {
         this.hairColor = hairColor;
     }
 
+    /**
+     * @return имя
+     */
     public String getName(){
         return name;
     }
 
+    /**
+     * @return вес
+     */
     public Long getWeight(){
         return weight;
     }
 
+    /**
+     * @return паспортный идентификатор
+     */
     public String getPassportID(){
         return passportID;
     }
 
+    /**
+     * @return цвет глаз
+     */
     public Color getEyeColor(){
         return eyeColor;
     }
 
+    /**
+     * @return цвет волос
+     */
     public Color getHairColor(){
         return hairColor;
     }
 
-    // Метод для получения строки с данными о человеке в формате "name: [name], weight: [weight], passportID: [passportID], eyeColor: [eyeColor], hairColor: [hairColor]"
+    /**
+     * Возвращает строковое представление администратора.
+     *
+     * @return строка с полями объекта
+     */
     @Override
     public String toString() {
         return "Person{" +
@@ -68,6 +93,3 @@ public class Person {
                 '}';
     }
 }
-
-
-

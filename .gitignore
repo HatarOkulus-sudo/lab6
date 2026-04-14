@@ -28,3 +28,15 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### User-specific class ignores ###
+**/HistoryManager.*
+**/Main.*
+**/ExecuteScriptCommand.*
+**/FilterContainsNameCommand.*
+**/HistoryCommand.*
+**/MaxBySHouldBeExpelledCommand.*
+**/MaxByShouldBeExpelledCommand.*
+**/RemoveCommand.*
+**/RemoveAllByStudentsCountCommand.*
+**/ShuffleCommand.*

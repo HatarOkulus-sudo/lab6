@@ -1,13 +1,19 @@
 package data;
 
+/**
+ * Координаты учебной группы.
+ */
 public class Coordinates {
     private Long x; //Поле не может быть null
     private long y;
 
-    public Coordinates(
-            Long x,
-            long y
-    ){
+    /**
+     * Создает координаты.
+     *
+     * @param x координата X, не может быть null
+     * @param y координата Y
+     */
+    public Coordinates(Long x, long y){
         if (x == null){
             throw new IllegalArgumentException("x cannot be null");
         }
@@ -15,16 +21,25 @@ public class Coordinates {
         this.y = y;
     }
 
+    /**
+     * @return координата X
+     */
     public Long getX(){
         return x;
     }
 
+    /**
+     * @return координата Y
+     */
     public long getY(){
         return y;
     }
 
-
-    // Метод для получения строки с координатами в формате "x: [x], y: [y]"
+    /**
+     * Возвращает строковое представление координат.
+     *
+     * @return строка с полями объекта
+     */
     @Override
     public String toString() {
         return "Coordinates{" +
@@ -33,4 +48,3 @@ public class Coordinates {
                 '}';
     }
 }
-

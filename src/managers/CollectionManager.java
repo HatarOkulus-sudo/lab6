@@ -7,41 +7,75 @@ import data.StudyGroup;
 import java.time.ZonedDateTime;
 import java.util.*;
 
+/**
+ * Менеджер коллекции учебных групп.
+ */
 public class CollectionManager {
     private final LinkedList<StudyGroup> collection = new LinkedList<>();
     private final ZonedDateTime initializationDate = ZonedDateTime.now();
-    private long currentId = 1L;
+    private long currentId = 1;
 
-    public LinkedList<StudyGroup> getCollection() { // метод для получения коллекции, который понадобиться для сохранения в файл
+    /**
+     * @return текущая внутренняя коллекция
+     */
+    public LinkedList<StudyGroup> getCollection() {
         return collection;
     }
 
-    public ZonedDateTime getInitializationDate() { // метод для получения даты инициализации, который понадобиться для отображения информации о коллекции
+    /**
+     * @return дата инициализации менеджера
+     */
+    public ZonedDateTime getInitializationDate() {
         return initializationDate;
     }
 
-    public long generateId() { // метод для генерации id для новых элементов
+    /**
+     * Генерирует следующий идентификатор.
+     *
+     * @return новый id
+     */
+    public long generateId() {
         return currentId++;
     }
-    public String getInfo() { // метод для получения информации о коллекции, который понадобиться для отображения информации о коллекции
+
+    /**
+     * Формирует строку с метаданными коллекции.
+     *
+     * @return информация о коллекции
+     */
+    public String getInfo() {
         return "Тип: " + collection.getClass().getName() +
                 ", дата инициализации: " + initializationDate +
                 ", количество элементов: " + collection.size();
     }
 
-    public List<StudyGroup> getAll() { // метод для получения всех элементов коллекции, который понадобиться для отображения всех элементов коллекции
+    /**
+     * @return копия всех элементов коллекции
+     */
+    public List<StudyGroup> getAll() {
         return new LinkedList<>(collection);
     }
 
-    public StudyGroup add(StudyGroup groupWithoutId) { // метод для добавления нового элемента в коллекцию, который понадобиться для команды add
+    /**
+     * Добавляет новый элемент с автоматически сгенерированным id.
+     *
+     * @param groupWithoutId элемент без id
+     * @return добавленный элемент
+     */
+    public StudyGroup add(StudyGroup groupWithoutId) {
         long id = generateId();
         groupWithoutId.setId(id);
         collection.add(groupWithoutId);
         return groupWithoutId;
     }
 
-
-    public StudyGroup addFromFile(StudyGroup groupFromFile) { // метод для добавления элемента из файла в коллекцию, который понадобиться для загрузки коллекции из файла.
+    /**
+     * Добавляет элемент, считанный из файла, сохраняя его id.
+     *
+     * @param groupFromFile элемент из файла
+     * @return добавленный элемент
+     */
+    public StudyGroup addFromFile(StudyGroup groupFromFile) {
         collection.add(groupFromFile);
         if (groupFromFile.getId() >= currentId) {
             currentId = groupFromFile.getId() + 1;
@@ -49,7 +83,14 @@ public class CollectionManager {
         return groupFromFile;
     }
 
-    public boolean updateById(long id, StudyGroup newValueWithoutId) { // метод для обновления элемента по id, который понадобиться для команды update
+    /**
+     * Обновляет элемент по id.
+     *
+     * @param id идентификатор изменяемого элемента
+     * @param newValueWithoutId новые данные
+     * @return true, если элемент найден и обновлен
+     */
+    public boolean updateById(long id, StudyGroup newValueWithoutId) {
         for (int i = 0; i < collection.size(); i++) {
             StudyGroup current = collection.get(i);
             if (current.getId() == id) {
@@ -61,15 +102,29 @@ public class CollectionManager {
         return false;
     }
 
-    public boolean removeById(long id) { // метод для удаления элемента по id, который понадобиться для команды remove_by_id
-        return collection.removeIf(g -> g.getId() == id); // удаляет элемент, если id совпало, и возвращает true. Если элемент не найден, возвращает false.
+    /**
+     * Удаляет элемент по id.
+     *
+     * @param id идентификатор элемента
+     * @return true, если элемент удален
+     */
+    public boolean removeById(long id) {
+        return collection.removeIf(g -> g.getId() == id);
     }
 
-    public void clear() { // метод для очистки коллекции, который понадобиться для команды clear
+    /**
+     * Полностью очищает коллекцию.
+     */
+    public void clear() {
         collection.clear();
     }
 
-    public boolean removeLast() { // метод для удаления последнего элемента коллекции, который понадобиться для команды remove_last. Возвращает true, если элемент удалён, и false, если коллекция была пустой.
+    /**
+     * Удаляет последний элемент.
+     *
+     * @return true, если удаление выполнено
+     */
+    public boolean removeLast() {
         if (collection.isEmpty()) {
             return false;
         }
@@ -77,28 +132,42 @@ public class CollectionManager {
         return true;
     }
 
-    public void shuffle() { // метод для перемешивания элементов коллекции, который понадобиться для команды shuffle
+    /**
+     * Перемешивает порядок элементов коллекции.
+     */
+    public void shuffle() {
         Collections.shuffle(collection);
     }
 
-    public int removeAllByStudentsCount(long studentsCount) { // метод для удаления всех элементов коллекции, у которых studentsCount равно заданному, который понадобиться для команды remove_all_by_students_count. Возвращает количество удалённых элементов.
+    /**
+     * Удаляет все элементы с заданным studentsCount.
+     *
+     * @param studentsCount значение studentsCount
+     * @return количество удаленных элементов
+     */
+    public int removeAllByStudentsCount(long studentsCount) {
         int before = collection.size();
         collection.removeIf(g -> g.getStudentsCount() == studentsCount);
-        return before - collection.size(); // сколько удалили
+        return before - collection.size();
     }
 
-    public Optional<StudyGroup> maxByShouldBeExpelled() { // метод для получения элемента с максимальным значением поля shouldBeExpelled, который понадобиться для команды max_by_should_be_expelled. Возвращает Optional, который может быть пустым, если коллекция пуста.
-        return collection.stream().max(Comparator.comparingInt(StudyGroup::getShouldBeExpelled));
-    }
+    /**
+     * Находит элемент с максимальным значением shouldBeExpelled.
+     *
+     * @return найденный элемент или null, если коллекция пуста
+     */
+    public StudyGroup getMaxByShouldBeExpelled() {
+        if (collection.isEmpty()) {
+            return null;
+        }
 
-    public List<StudyGroup> filterContainsName(String substring) { // метод для получения всех элементов коллекции, у которых поле name содержит заданную подстроку, который понадобиться для команды filter_contains_name. Возвращает список найденных элементов. Поиск регистронезависимый.
-        String needle = substring.toLowerCase();
-        List<StudyGroup> result = new ArrayList<>();
-        for (StudyGroup g : collection) {
-            if (g.getName().toLowerCase().contains(needle)) {
-                result.add(g);
+        StudyGroup maxGroup = null;
+        for (StudyGroup group : collection) {
+            if (maxGroup == null ||
+                    group.getShouldBeExpelled() > maxGroup.getShouldBeExpelled()) {
+                maxGroup = group;
             }
         }
-        return result; // возвращаем список найденных элементов. Если ничего не найдено, вернётся пустой список.
+        return maxGroup;
     }
 }

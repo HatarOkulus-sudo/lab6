@@ -5,25 +5,46 @@ package commands;
 import managers.CollectionManager;
 import managers.InputManager;
 
+/**
+ * Команда удаления элемента коллекции по идентификатору.
+ */
 public class RemoveByIdCommand implements Command{
 
     private final CollectionManager collectionManager;
     private final InputManager inputManager;
 
+    /**
+     * Создает команду remove_by_id.
+     *
+     * @param collectionManager менеджер коллекции
+     * @param inputManager менеджер ввода (зарезервирован для единообразия зависимостей)
+     */
     public RemoveByIdCommand(CollectionManager collectionManager, InputManager inputManager) {
         this.collectionManager = collectionManager;
         this.inputManager = inputManager;
     }
 
+    /**
+     * @return имя команды
+     */
     @Override
     public String getName() {
         return "remove_by_id";
     }
+
+    /**
+     * @return описание команды
+     */
     @Override
     public String getDescription() {
         return "Удалить элемент из коллекции по его id";
     }
 
+    /**
+     * Удаляет элемент по переданному id.
+     *
+     * @param args аргументы команды, где первый элемент - id
+     */
     @Override
     public void execute(String[] args){
         if (args == null || args.length == 0 || args[0].isBlank()){ // проверка есть ли аргумент. Данная команда требует аргумент - id элемента, который нужно удалить

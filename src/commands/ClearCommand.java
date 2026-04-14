@@ -4,24 +4,43 @@ package commands;
 
 import managers.CollectionManager;
 
+/**
+ * Команда очистки коллекции.
+ */
 public class ClearCommand implements Command{
 
     private final CollectionManager collectionManager;
+
+    /**
+     * Создает команду clear.
+     *
+     * @param collectionManager менеджер коллекции
+     */
     public ClearCommand(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
     }
 
-
+    /**
+     * @return имя команды
+     */
     @Override
     public String getName() {
         return "clear";
     }
 
+    /**
+     * @return описание команды
+     */
     @Override
     public String getDescription() {
         return "Очистить коллекцию";
     }
 
+    /**
+     * Очищает коллекцию после проверки отсутствия аргументов.
+     *
+     * @param args аргументы команды
+     */
     @Override
     public void execute(String[] args) {
 

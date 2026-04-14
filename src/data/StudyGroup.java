@@ -2,17 +2,68 @@ package data;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Класс, представляющий учебную группу.
+ */
 public class StudyGroup {
-    private long id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
-    private String name; //Поле не может быть null, Строка не может быть пустой
-    private Coordinates coordinates; //Поле не может быть null
-    private java.time.ZonedDateTime creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически
-    private long studentsCount; //Значение поля должно быть больше 0
-    private int shouldBeExpelled; //Значение поля должно быть больше 0
-    private FormOfEducation formOfEducation; //Поле не может быть null
-    private Semester semesterEnum; //Поле не может быть null
-    private Person groupAdmin; //Поле не может быть null
+    /**
+     * Уникальный идентификатор группы. Должен быть больше 0.
+     */
+    private long id;
 
+    /**
+     * Название группы. Не может быть null или пустым.
+     */
+    private String name;
+
+    /**
+     * Координаты группы. Не могут быть null.
+     */
+    private Coordinates coordinates;
+
+    /**
+     * Дата создания группы. Генерируется автоматически, не может быть null.
+     */
+    private java.time.ZonedDateTime creationDate;
+
+    /**
+     * Количество студентов в группе. Должно быть больше 0.
+     */
+    private long studentsCount;
+
+    /**
+     * Количество студентов, которые должны быть исключены. Должно быть больше 0.
+     */
+    private int shouldBeExpelled;
+
+    /**
+     * Форма обучения. Не может быть null.
+     */
+    private FormOfEducation formOfEducation;
+
+    /**
+     * Семестр. Не может быть null.
+     */
+    private Semester semesterEnum;
+
+    /**
+     * Администратор группы. Не может быть null.
+     */
+    private Person groupAdmin;
+
+    /**
+     * Конструктор учебной группы.
+     *
+     * @param id Уникальный идентификатор группы.
+     * @param name Название группы.
+     * @param coordinates Координаты группы.
+     * @param creationDate Дата создания группы.
+     * @param studentsCount Количество студентов в группе.
+     * @param shouldBeExpelled Количество студентов, которые должны быть исключены.
+     * @param formOfEducation Форма обучения.
+     * @param semesterEnum Семестр.
+     * @param groupAdmin Администратор группы.
+     */
     public StudyGroup(long id, String name, Coordinates coordinates, ZonedDateTime creationDate, long studentsCount, int shouldBeExpelled, FormOfEducation formOfEducation, Semester semesterEnum, Person groupAdmin){
 
         // Валидация входных данных
@@ -46,7 +97,7 @@ public class StudyGroup {
         this.id = id;
         this.name = name;
         this.coordinates = coordinates;
-        this.creationDate = ZonedDateTime.now();
+        this.creationDate = creationDate;
         this.studentsCount = studentsCount;
         this.shouldBeExpelled = shouldBeExpelled;
         this.formOfEducation = formOfEducation;

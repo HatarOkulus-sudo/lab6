@@ -6,28 +6,46 @@ import data.StudyGroup;
 import managers.CollectionManager;
 import managers.FileManager;
 
-import java.util.LinkedList;
-
+/**
+ * Команда сохранения коллекции в файл.
+ */
 public class SaveCommand implements Command{
 
     private final CollectionManager collectionManager;
     private final FileManager fileManager;
 
+    /**
+     * Создает команду save.
+     *
+     * @param collectionManager менеджер коллекции
+     * @param fileManager файловый менеджер
+     */
     public SaveCommand(CollectionManager collectionManager, FileManager fileManager) {
         this.collectionManager = collectionManager;
         this.fileManager = fileManager;
     }
 
+    /**
+     * @return имя команды
+     */
     @Override
     public String getName() {
         return "save";
     }
 
+    /**
+     * @return описание команды
+     */
     @Override
     public String getDescription() {
         return "Сохранить коллекцию в файл";
     }
 
+    /**
+     * Сохраняет текущую коллекцию в файл.
+     *
+     * @param args аргументы команды
+     */
     @Override
     public void execute(String[] args){
         if (args != null && args.length >0 && !args[0].isBlank()){
@@ -36,7 +54,6 @@ public class SaveCommand implements Command{
             return;
         }
 
-        LinkedList<StudyGroup> collection = collectionManager.getCollection(); // Коллекция для сохранения
         try{
             fileManager.save(collectionManager.getCollection()); // Попытка сохранить коллекцию в файл
             System.out.println("Коллекция успешно сохранена в файл.");
