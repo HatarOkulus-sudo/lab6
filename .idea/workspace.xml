@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="249eef62-4a12-4cd5-ae0b-4de24fafcb00" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/Common/dto/CommandRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/dto/CommandResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/ServerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/app/ConsoleApp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/app/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/app/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/AddCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/ClearCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/Command.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/ExitCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/HelpCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/InfoCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/RemoveByIdCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/RemoveLastCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/SaveCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/ShowCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/UpdateIdCommand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/commands/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/Color.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/Coordinates.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/FormOfEducation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/Person.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/Semester.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/StudyGroup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/data/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/CollectionManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/CommandBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/CommandsManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/FileManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/InputManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/managers/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-3.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ConsoleApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/AddCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ClearCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/HelpCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/InfoCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/RemoveByIdCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/RemoveLastCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/SaveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ShowCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/UpdateIdCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/FormOfEducation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/FormOfEducation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/Semester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/StudyGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/data/StudyGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managers/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/managers/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managers/CommandBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managers/CommandsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managers/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/managers/InputManager.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/hatarokulus/Desktop/lab5" value="3A9fRPPUvWaikWUTrfPzOyRDVVj" />
+      <entry key="_/Users/hatarokulus/Desktop/lab6" value="3DVNmueT8Tb4urCEx4zPu8ItNsW" />
+      <entry key="_/Users/hatarokulus/Desktop/lab6 2" value="3Ex3PYiq0pa4Ua792kJMBW0sBmg" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Hatar Okulus &lt;hatarokulus@macbook-pro-hatar.local&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HatarOkulus-sudo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HatarOkulus-sudo/lab5_without_main_class.git&quot;,
+    &quot;accountId&quot;: &quot;8003ef3d-02fa-4f52-9aa2-2ba9629a3fd9&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3A9fRPPUvWaikWUTrfPzOyRDVVj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientMain.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ServerMain.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hatarokulus/Desktop/lab6 2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/hatarokulus/Desktop/lab5/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ServerMain" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server.ServerMain" />
+      <module name="lab5" />
+      <option name="PROGRAM_PARAMETERS" value="data.xml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <module name="lab5" />
+      <option name="PROGRAM_PARAMETERS" value="collection.xml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="249eef62-4a12-4cd5-ae0b-4de24fafcb00" name="Changes" comment="" />
+      <created>1772009698007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772009698007</updated>
+      <workItem from="1772905273064" duration="10000" />
+      <workItem from="1772906350605" duration="2120000" />
+      <workItem from="1772922967915" duration="617000" />
+      <workItem from="1773248160099" duration="31000" />
+      <workItem from="1773392201873" duration="388000" />
+      <workItem from="1773393014191" duration="39000" />
+      <workItem from="1773499119539" duration="3199000" />
+      <workItem from="1775551602909" duration="1612000" />
+      <workItem from="1775641024565" duration="725000" />
+      <workItem from="1775642397039" duration="10992000" />
+      <workItem from="1775732646628" duration="10232000" />
+      <workItem from="1775809240497" duration="1187000" />
+      <workItem from="1775820077722" duration="18554000" />
+      <workItem from="1776082155467" duration="154000" />
+      <workItem from="1776113069598" duration="22037000" />
+      <workItem from="1777208862427" duration="490000" />
+      <workItem from="1777209370956" duration="1205000" />
+      <workItem from="1777215560546" duration="6000" />
+      <workItem from="1777226571851" duration="1605000" />
+      <workItem from="1778363438533" duration="442000" />
+      <workItem from="1778430021804" duration="11684000" />
+      <workItem from="1778835244091" duration="4289000" />
+      <workItem from="1779294232043" duration="7000" />
+      <workItem from="1779363296420" duration="10220000" />
+      <workItem from="1779726317448" duration="2675000" />
+      <workItem from="1779730390692" duration="2781000" />
+      <workItem from="1779790479174" duration="18227000" />
+      <workItem from="1780842688908" duration="333000" />
+      <workItem from="1781106367916" duration="476000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1776180174246</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776180174246</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

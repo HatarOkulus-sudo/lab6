@@ -1,6 +1,18 @@
-info
-help
+update
+Group A
+10
+20
+100
+1
+FULL_TIME_EDUCATION
+FIRST
+Admin Name
+70
+AB123456
+BLUE
+BLACK
 show
-q23w
-add
-ememe
+info
+shuffle
+help
+qweqwe

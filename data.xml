@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <studyGroups>
   <studyGroup>
-    <id>2</id>
-    <name>R3141</name>
+    <id>3</id>
+    <name>Group A</name>
     <coordinates>
-      <x>33</x>
-      <y>22</y>
+      <x>10</x>
+      <y>20</y>
     </coordinates>
-    <creationDate>2026-04-14T16:22:36.891158+03:00[Europe/Moscow]</creationDate>
-    <studentsCount>12</studentsCount>
-    <shouldBeExpelled>45</shouldBeExpelled>
+    <creationDate>2026-05-26T21:44:16.823679+03:00[Europe/Moscow]</creationDate>
+    <studentsCount>100</studentsCount>
+    <shouldBeExpelled>1</shouldBeExpelled>
     <formOfEducation>FULL_TIME_EDUCATION</formOfEducation>
-    <semesterEnum>SECOND</semesterEnum>
+    <semesterEnum>FIRST</semesterEnum>
     <groupAdmin>
-      <name>Oleg</name>
-      <weight>98</weight>
-      <passportID>504550</passportID>
-      <eyeColor>BLACK</eyeColor>
-      <hairColor>BLUE</hairColor>
+      <name>Admin Name</name>
+      <weight>70</weight>
+      <passportID>AB123456</passportID>
+      <eyeColor>BLUE</eyeColor>
+      <hairColor>BLACK</hairColor>
     </groupAdmin>
   </studyGroup>
   <studyGroup>
     <id>1</id>
-    <name>12</name>
+    <name>Oleg</name>
     <coordinates>
-      <x>123243</x>
-      <y>12345</y>
+      <x>12</x>
+      <y>12</y>
     </coordinates>
-    <creationDate>2026-04-14T16:21:18.165839+03:00[Europe/Moscow]</creationDate>
-    <studentsCount>12345</studentsCount>
-    <shouldBeExpelled>213456</shouldBeExpelled>
+    <creationDate>2026-05-26T21:00:42.598641+03:00[Europe/Moscow]</creationDate>
+    <studentsCount>12</studentsCount>
+    <shouldBeExpelled>12</shouldBeExpelled>
     <formOfEducation>FULL_TIME_EDUCATION</formOfEducation>
     <semesterEnum>SECOND</semesterEnum>
     <groupAdmin>
-      <name>Oleg</name>
-      <weight>12324</weight>
-      <passportID>1232</passportID>
-      <eyeColor>BLUE</eyeColor>
-      <hairColor>BLUE</hairColor>
+      <name>hjasgd</name>
+      <weight>11324</weight>
+      <passportID>12324</passportID>
+      <eyeColor>RED</eyeColor>
+      <hairColor>RED</hairColor>
+    </groupAdmin>
+  </studyGroup>
+  <studyGroup>
+    <id>2</id>
+    <name>add</name>
+    <coordinates>
+      <x>23</x>
+      <y>1232435</y>
+    </coordinates>
+    <creationDate>2026-05-26T21:07:21.331280+03:00[Europe/Moscow]</creationDate>
+    <studentsCount>23243</studentsCount>
+    <shouldBeExpelled>21343</shouldBeExpelled>
+    <formOfEducation>EVENING_CLASSES</formOfEducation>
+    <semesterEnum>FIRST</semesterEnum>
+    <groupAdmin>
+      <name>jskdhf</name>
+      <weight>4567</weight>
+      <passportID>345678</passportID>
+      <eyeColor>ORANGE</eyeColor>
+      <hairColor>ORANGE</hairColor>
     </groupAdmin>
   </studyGroup>
 </studyGroups>
